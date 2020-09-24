@@ -1,0 +1,75 @@
+#===============================================DREAMS===============================================
+#==============Decide========Record========Eye========Affirm========Manage========Share==============
+#!/bin/bash
+DREAMS=${0}`date +[%j]%H:%M:%S-[%U]%a-[%b]%d-%Y`.txt
+cp -T ${0} ${DREAMS}
+chmod +w ${DREAMS}
+if [ -w ${DREAMS} ]; then
+    echo File ${DREAMS} has been created.; vim ${DREAMS} +
+    echo `date +"#==============Day %j of Year %Y, %A of Week %U, day %d of %B, Time %T"`>>${DREAMS}
+    chmod -w ${DREAMS}; echo
+    exit 0
+else
+    echo An error may have occurred!
+    echo File ${DREAMS} is not writable.
+    echo
+    exit 1
+fi
+#==============Decide========Record========Eye========Affirm========Manage========Share==============
+#==============================================Schedule==============================================
+@03:30 ----10--01 Wake up for DREAMS.             ||                   Significant
+@03:40 ====20==02 Meditation & Dressing.          ||   Kernel Engineer, RHCE|Embedded Linux, RHCSA
+@04:00 ----60--03 English Writing for an hour.    ||  English NCE 3~4, IELTS|English NCE 1~2
+@05:00 ====60==04 English Reading for an hour.    ||     Deposits 180000 CNY|Deposits 60000 CNY
+@06:00 ----60--05 English Speaking for an hour.   ||                        |
+@07:00 ====60==06 English Listening for an hour.  ||        January 29, 2025|February 01, 2022
+@08:00 ---230--07 Breakfast, Planning & Music.    ||Normal-------------------------------------Urgent
+@11:50 ====20==08 Noon Break for 20 minutes.      ||       February 03, 2030|February 04, 2038
+@12:10 ----40--09 Lunch, Retrospect & Reading.    ||                  Violin|February 11, 2051
+@12:50 ===310==10 Good afternoon.                 ||     Deposits 600000 CNY|February 15, 2056
+@18:00 ---120--11 Meditation, Running & Dinner.   ||   English NCE 1~4, UKVI|Retirement(60)
+@20:00 ====30==12 Reading, Summary & Violin.      || RHCA, RHCSS,RHCDS,RHCVA|
+@20:30 ---420--13 Fall asleep.                    ||                   Inessential
+#==============================================Schedule==============================================
+#===============================================Matter===============================================
+food$                                             ||                    book|food
+wear$                                             ||                    note|wear
+home$                                             ||                    rest|home
+walk$                                             ||                    ToDo|walk
+                                                  ||                        |
+book$                                             ||                        |
+note$                                             ||                        |
+rest$                                             ||                        |
+ToDo$                                             ||                        |
+                                                  ||                    mind|body
+$money                                            ||undesired--important--money--essential--secondary
+                                                  ||                    luck|free
+Info$                                             ||                        |
+work$                                             ||                        |
+view$                                             ||                        |
+talk$                                             ||                        |
+                                                  ||                        |
+family$                                           ||                    talk|buddha
+career$                                           ||                    view|violin
+violin$                                           ||                    work|career
+buddha$                                           ||                    Info|family
+#===============================================Matter===============================================
+#===============================================Styles===============================================
+@food
+&morning --------- Hydromel/Porridge/Soymilk, Baozi/Bread, Cake/Noodles, Apple/Banana/Jujube/Nutmeat
+&nooning ========= Apple/Berry/Orange/Pear, Cake/Cookie, Coffee/Tea
+&evening --------- Hydromel/Porridge/Soymilk, Meals
+&whenever ======== Tea/Water/Soymilk
+
+@wear
+&spring ---------- V-Knit Shirt/Body-hugging underwear, Ninth/Pencil Jeans, Board shoes/Sneakers
+&summer ========== Polo Shirt, Ninth/Pencil Pants, Slip-on shoes/Sneakers
+&autumn ---------- Jacket/Shirt/Suit, Casual/Suit Pants, Board shoes/Sneakers
+&winter ========== Vest/Windbreaker, Ninth/Pencil Jeans, Boots shoes/Sneakers
+
+@home
+&articles -------- Less Is More.
+
+@walk
+&tripmode -------- simple is beautiful.
+#===============================================Styles===============================================
